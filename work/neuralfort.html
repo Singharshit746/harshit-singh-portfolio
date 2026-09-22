@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NeuralFort | Harshit Singh</title>
+    <meta
+      name="description"
+      content="NeuralFort is a mental health AI assistant built by Harshit Singh with Python, React, and API integration."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-nav">
+      <div class="nav-inner">
+        <a class="brand" href="/">Harshit Singh</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="site-menu"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+        <ul class="site-menu" id="site-menu" data-open="false">
+          <li><a href="/#work">Work</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li>
+            <a class="nav-resume" href="/Harshit-Singh-Resume.pdf" download="Harshit-Singh-Resume.pdf">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main id="main" class="project-page wrap">
+      <a class="back-link" href="/#work">Back to work</a>
+      <p class="hero-kicker">Mental health AI assistant</p>
+      <h1>NeuralFort</h1>
+      <div class="project-layout">
+        <div class="project-prose">
+          <p>
+            NeuralFort is a conversational assistant focused on mental health support. The point was
+            not a novelty chatbot. It was a place to talk in context, with replies that stayed with
+            what the person had actually said.
+          </p>
+          <p>
+            I built a responsive frontend and wired it to backend APIs so the conversation could
+            happen in real time. Most of the quality work was in the prompts: adjusting how the
+            model was asked to respond so the exchange felt more usable and less generic.
+          </p>
+          <p>
+            The architecture was set up so later pieces could plug in, including sentiment analysis
+            and personalized recommendations. Those pieces are not built yet. They are a direction,
+            not a claim about the current product.
+          </p>
+        </div>
+        <dl class="project-meta">
+          <dt>Built with</dt>
+          <dd>
+            <ul class="tech-list">
+              <li>Python</li>
+              <li>React</li>
+              <li>APIs</li>
+              <li>AI integration</li>
+            </ul>
+          </dd>
+          <dt>Code</dt>
+          <dd>
+            <a
+              href="https://github.com/Singharshit746/NeuralFort-Mental-Health-AI-Assistant"
+              rel="noopener noreferrer"
+              target="_blank"
+              >View on GitHub</a
+            >
+          </dd>
+        </dl>
+      </div>
+      <nav class="project-pager" aria-label="Other projects">
+        <a href="/work/skillforge-ai.html">
+          <span>Previous</span>
+          <strong>SkillForge AI</strong>
+        </a>
+        <a class="next" href="/work/agrisustain.html">
+          <span>Next</span>
+          <strong>AgriSustain</strong>
+        </a>
+      </nav>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

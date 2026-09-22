@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website templates | Harshit Singh</title>
+    <meta
+      name="description"
+      content="Responsive website templates by Harshit Singh, including a birthday site and a midnight event page, built with HTML, CSS, and JavaScript."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-nav">
+      <div class="nav-inner">
+        <a class="brand" href="/">Harshit Singh</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="site-menu"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+        <ul class="site-menu" id="site-menu" data-open="false">
+          <li><a href="/#work">Work</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li>
+            <a class="nav-resume" href="/Harshit-Singh-Resume.pdf" download="Harshit-Singh-Resume.pdf">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main id="main" class="project-page wrap">
+      <a class="back-link" href="/#work">Back to work</a>
+      <p class="hero-kicker">HTML, CSS, and JavaScript · in progress</p>
+      <h1>Website templates</h1>
+      <div class="project-layout">
+        <div class="project-prose">
+          <p>
+            These are multi-page sites designed to hold up on a phone as well as a laptop. The
+            layouts are mobile-first. Components are meant to be reused instead of rebuilt for every
+            page.
+          </p>
+          <p>
+            I am converting finished sites into customizable templates so the same structure can be
+            restyled and reused. Two public starting points are a birthday website and a midnight
+            event page. The work is still in progress: the goal is a clean design system, navigation
+            that is obvious, and pages that do not fall apart at smaller widths.
+          </p>
+        </div>
+        <dl class="project-meta">
+          <dt>Built with</dt>
+          <dd>
+            <ul class="tech-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </dd>
+          <dt>Code</dt>
+          <dd>
+            <a
+              href="https://github.com/Singharshit746/birthday-website-template"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Birthday template</a
+            >
+            <br />
+            <a
+              href="https://github.com/Singharshit746/midnight-event-fireworks-template"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Midnight event template</a
+            >
+          </dd>
+        </dl>
+      </div>
+      <nav class="project-pager" aria-label="Other projects">
+        <a href="/work/usb-firewall.html">
+          <span>Previous</span>
+          <strong>USB Firewall for Linux</strong>
+        </a>
+        <a class="next" href="/work/skillforge-ai.html">
+          <span>Next</span>
+          <strong>SkillForge AI</strong>
+        </a>
+      </nav>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

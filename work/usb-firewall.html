@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>USB Firewall for Linux | Harshit Singh</title>
+    <meta
+      name="description"
+      content="A Linux USB firewall by Harshit Singh that detects and blocks unauthorized USB devices in real time using udev, sysfs, and Bash."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-nav">
+      <div class="nav-inner">
+        <a class="brand" href="/">Harshit Singh</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="site-menu"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+        <ul class="site-menu" id="site-menu" data-open="false">
+          <li><a href="/#work">Work</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li>
+            <a class="nav-resume" href="/Harshit-Singh-Resume.pdf" download="Harshit-Singh-Resume.pdf">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main id="main" class="project-page wrap">
+      <a class="back-link" href="/#work">Back to work</a>
+      <p class="hero-kicker">Endpoint security</p>
+      <h1>USB Firewall for Linux</h1>
+      <div class="project-layout">
+        <div class="project-prose">
+          <p>
+            This project sits closest to the cyber security side of my degree. A USB device that
+            should not be on a machine is a small object with a large blast radius. The firewall
+            watches for those devices and blocks the ones that are not allowed.
+          </p>
+          <p>
+            Authorization is a whitelist. udev rules and sysfs decide what is permitted. Shell
+            scripts and Linux utilities do the monitoring and the blocking in real time, rather than
+            waiting for someone to notice a drive in a port.
+          </p>
+          <p>
+            Events are logged so there is an audit trail and a starting point for basic digital
+            forensics. I built it on Kali Linux. The useful outcome for me was practical: Linux
+            security, device management, and system-level scripting, not a slide about those topics.
+          </p>
+          <p>A public GitHub repository is not listed yet.</p>
+        </div>
+        <dl class="project-meta">
+          <dt>Built with</dt>
+          <dd>
+            <ul class="tech-list">
+              <li>Bash</li>
+              <li>Linux</li>
+              <li>udev</li>
+              <li>sysfs</li>
+              <li>Kali Linux</li>
+            </ul>
+          </dd>
+          <dt>Focus</dt>
+          <dd>Linux security, device management, and system-level scripting</dd>
+        </dl>
+      </div>
+      <nav class="project-pager" aria-label="Other projects">
+        <a href="/work/agrisustain.html">
+          <span>Previous</span>
+          <strong>AgriSustain</strong>
+        </a>
+        <a class="next" href="/work/website-templates.html">
+          <span>Next</span>
+          <strong>Website templates</strong>
+        </a>
+      </nav>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
