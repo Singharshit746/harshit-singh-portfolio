@@ -8,8 +8,39 @@
       name="description"
       content="A Linux USB firewall by Harshit Singh that detects and blocks unauthorized USB devices in real time using udev, sysfs, and Bash."
     />
+    <link
+      rel="canonical"
+      href="https://harshit-singh-portfolio.vercel.app/work/usb-firewall.html"
+    />
+    <meta name="author" content="Harshit Singh" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://harshit-singh-portfolio.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Work",
+            "item": "https://harshit-singh-portfolio.vercel.app/#work"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "USB Firewall for Linux",
+            "item": "https://harshit-singh-portfolio.vercel.app/work/usb-firewall.html"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -23,7 +54,11 @@
           aria-expanded="false"
           aria-label="Open menu"
         >
-          <span class="nav-toggle-bars" aria-hidden="true"></span>
+          <span class="nav-toggle-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </button>
         <ul class="site-menu" id="site-menu" data-open="false">
           <li><a href="/#work">Work</a></li>
@@ -31,15 +66,26 @@
           <li><a href="/#about">About</a></li>
           <li><a href="/#contact">Contact</a></li>
           <li>
-            <a class="nav-resume" href="/Harshit-Singh-Resume.pdf" download="Harshit-Singh-Resume.pdf">Resume</a>
+            <a
+              class="nav-resume"
+              href="/Harshit-Singh-Resume.pdf"
+              download="Harshit-Singh-Resume.pdf"
+              >Resume</a
+            >
           </li>
         </ul>
       </div>
     </header>
     <main id="main" class="project-page wrap">
-      <a class="back-link" href="/#work">Back to work</a>
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#work">Work</a></li>
+          <li><span aria-current="page">USB Firewall for Linux</span></li>
+        </ol>
+      </nav>
       <p class="hero-kicker">Endpoint security</p>
-      <h1>USB Firewall for Linux</h1>
+      <h1 class="vt-usb">USB Firewall for Linux</h1>
       <div class="project-layout">
         <div class="project-prose">
           <p>
@@ -85,6 +131,41 @@
         </a>
       </nav>
     </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <p class="footer-name">Harshit Singh</p>
+          <p>B.Tech CSE (Cyber Security), Bennett University</p>
+          <p>This site is written and maintained by Harshit Singh.</p>
+          <ul class="footer-links">
+            <li>
+              <a href="https://github.com/Singharshit746" rel="noopener noreferrer" target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/harshit-cse"
+                rel="noopener noreferrer"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li><a href="mailto:harshitsingh.7april@gmail.com">Email</a></li>
+            <li>
+              <a href="/Harshit-Singh-Resume.pdf" download="Harshit-Singh-Resume.pdf">Resume</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="legal-links">
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/terms.html">Terms of Use</a></li>
+          </ul>
+          <p>&copy; <span data-year></span> Harshit Singh</p>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

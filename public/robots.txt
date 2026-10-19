@@ -1,0 +1,10 @@
+# Change the sitemap host if the live domain is not harshit-singh-portfolio.vercel.app
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Disallow: /404.html
+
+Sitemap: https://harshit-singh-portfolio.vercel.app/sitemap.xml

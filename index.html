@@ -8,6 +8,7 @@
       name="description"
       content="Portfolio of Harshit Singh, a B.Tech Computer Science Engineering (Cyber Security) student at Bennett University. Projects in AI-powered applications, frontend development, Linux systems, and endpoint security."
     />
+    <link rel="canonical" href="https://harshit-singh-portfolio.vercel.app/" />
     <meta
       property="og:title"
       content="Harshit Singh | Computer Science Engineering (Cyber Security)"
@@ -16,11 +17,37 @@
       property="og:description"
       content="B.Tech CSE (Cyber Security) student at Bennett University. Work across AI-powered applications, frontend development, Linux systems, and networking."
     />
-    <meta property="og:image" content="/harshit-singh.jpg" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="/harshit-singh.webp" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://harshit-singh-portfolio.vercel.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/harshit-singh.webp" />
+    <meta name="author" content="Harshit Singh" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="/harshit-singh.webp" type="image/webp" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "name": "Harshit Singh",
+        "url": "https://harshit-singh-portfolio.vercel.app/",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Harshit Singh",
+          "url": "https://harshit-singh-portfolio.vercel.app/",
+          "email": "mailto:harshitsingh.7april@gmail.com",
+          "telephone": "++1-555-0001",
+          "jobTitle": "B.Tech CSE (Cyber Security) student",
+          "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "Bennett University"
+          },
+          "image": "https://harshit-singh-portfolio.vercel.app/harshit-singh.webp",
+          "sameAs": ["https://github.com/Singharshit746", "https://www.linkedin.com/in/harshit-cse"]
+        }
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -34,7 +61,11 @@
           aria-expanded="false"
           aria-label="Open menu"
         >
-          <span class="nav-toggle-bars" aria-hidden="true"></span>
+          <span class="nav-toggle-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </button>
         <ul class="site-menu" id="site-menu" data-open="false">
           <li><a href="#work">Work</a></li>
@@ -57,23 +88,27 @@
       <section class="hero wrap" id="top">
         <div class="hero-layout">
           <figure class="portrait">
-            <img
-              src="/harshit-singh.jpg"
-              alt="Portrait of Harshit Singh, wearing glasses and a maroon polo shirt"
-              width="640"
-              height="800"
-            />
+            <picture>
+              <source srcset="/harshit-singh.webp" type="image/webp" />
+              <img
+                src="/harshit-singh.jpg"
+                alt="Portrait of Harshit Singh, wearing glasses and a maroon polo shirt"
+                width="394"
+                height="506"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
           </figure>
           <div class="hero-copy">
-            <p class="hero-kicker">Bennett University</p>
             <h1>Harshit Singh</h1>
             <p class="lede">
               I make software people can try: learning tools, conversational products, and Linux
               security utilities.
             </p>
             <p>
-              Second-year B.Tech student in Computer Science Engineering, specializing in Cyber
-              Security. Recent work includes an IT internship at JK Tech and team builds at Bennett
+              Second-year B.Tech Computer Science Engineering student specializing in Cyber
+              Security. Recent work includes an IT internship at JK Tech and team builds at
               hackathons.
             </p>
             <div class="hero-actions">
@@ -95,79 +130,59 @@
 
           <div class="projects-list">
             <article class="project project-featured">
-              <p class="project-index" aria-hidden="true">01</p>
-              <div>
-                <h3>
-                  <a href="/work/skillforge-ai.html">SkillForge AI</a>
-                </h3>
+              <a class="project-hit" href="/work/skillforge-ai.html">
+                <h3 class="vt-skillforge">SkillForge AI</h3>
                 <p class="project-kind">Personalized learning platform · SIH internal, 2026</p>
                 <p>
                   An AI learning platform that finds competency gaps and recommends what to study
                   next. Built with a 6-member team for the Bennett University internal Smart India
                   Hackathon. Top 100 in that internal round.
                 </p>
-                <a class="text-link" href="/work/skillforge-ai.html">Read the full story</a>
-              </div>
+              </a>
             </article>
 
             <article class="project">
-              <p class="project-index" aria-hidden="true">02</p>
-              <div>
-                <h3>
-                  <a href="/work/neuralfort.html">NeuralFort</a>
-                </h3>
+              <a class="project-hit" href="/work/neuralfort.html">
+                <h3 class="vt-neuralfort">NeuralFort</h3>
                 <p class="project-kind">Mental health AI assistant</p>
                 <p>
                   A conversational assistant for mental health support, with a live frontend talking
                   to APIs. Prompt work kept the conversation on-context.
                 </p>
-                <a class="text-link" href="/work/neuralfort.html">Read the full story</a>
-              </div>
+              </a>
             </article>
 
             <article class="project">
-              <p class="project-index" aria-hidden="true">03</p>
-              <div>
-                <h3>
-                  <a href="/work/agrisustain.html">AgriSustain</a>
-                </h3>
+              <a class="project-hit" href="/work/agrisustain.html">
+                <h3 class="vt-agrisustain">AgriSustain</h3>
                 <p class="project-kind">Farming assistant · Hackaccino 2025</p>
                 <p>
                   Crop recommendations, soil insights, and sustainable farming guidance, built as a
                   weekend prototype at Hackaccino.
                 </p>
-                <a class="text-link" href="/work/agrisustain.html">Read the full story</a>
-              </div>
+              </a>
             </article>
 
             <article class="project">
-              <p class="project-index" aria-hidden="true">04</p>
-              <div>
-                <h3>
-                  <a href="/work/usb-firewall.html">USB Firewall for Linux</a>
-                </h3>
+              <a class="project-hit" href="/work/usb-firewall.html">
+                <h3 class="vt-usb">USB Firewall for Linux</h3>
                 <p class="project-kind">Endpoint security</p>
                 <p>
                   A Linux USB firewall that detects unauthorized devices in real time and blocks
                   them against a whitelist.
                 </p>
-                <a class="text-link" href="/work/usb-firewall.html">Read the full story</a>
-              </div>
+              </a>
             </article>
 
             <article class="project">
-              <p class="project-index" aria-hidden="true">05</p>
-              <div>
-                <h3>
-                  <a href="/work/website-templates.html">Website templates</a>
-                </h3>
-                <p class="project-kind">HTML, CSS, and JavaScript · in progress</p>
+              <a class="project-hit" href="/work/website-templates.html">
+                <h3 class="vt-templates">Website templates</h3>
+                <p class="project-kind">HTML, CSS, and JavaScript</p>
                 <p>
                   Multi-page templates being turned into restylable pieces, starting with a birthday
                   site and a midnight event page.
                 </p>
-                <a class="text-link" href="/work/website-templates.html">Read the full story</a>
-              </div>
+              </a>
             </article>
           </div>
         </div>
@@ -215,7 +230,7 @@
             <div class="about-copy">
               <p>
                 I study Computer Science Engineering with a Cyber Security specialization at Bennett
-                University in Greater Noida. Second year is done. CGPA is 8.02.
+                University in Greater Noida. Second year is done.
               </p>
               <p>
                 A lot of my software comes from rooms with other people: SIH internals, Hackaccino,
@@ -225,8 +240,8 @@
                 a position and then writing it down.
               </p>
               <p>
-                Schooling before this: Birla Public School, Pilani, Science, 81.6% in 2024. St.
-                Marks Sr. Sec. Public School, New Delhi, 91% in 2022.
+                Schooling before this: Birla Public School, Pilani, Science, 2024. St. Marks Sr.
+                Sec. Public School, New Delhi, 2022.
               </p>
             </div>
             <aside class="toolkit">
@@ -300,7 +315,8 @@
       <div class="wrap footer-grid">
         <div>
           <p class="footer-name">Harshit Singh</p>
-          <p>CSE (Cyber Security), Bennett University</p>
+          <p>B.Tech CSE (Cyber Security), Bennett University</p>
+          <p>This site is written and maintained by Harshit Singh.</p>
           <ul class="footer-links">
             <li>
               <a href="https://github.com/Singharshit746" rel="noopener noreferrer" target="_blank"
